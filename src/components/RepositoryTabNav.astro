@@ -1,0 +1,21 @@
+---
+export interface Props {
+    currentTab?: string;
+}
+
+const { currentTab } = Astro.props;
+---
+
+<nav class="UnderlineNav pl-4">
+    <div class="UnderlineNav-body" role="tablist">
+        <button class="UnderlineNav-item" role="tab" type="button" aria-selected="true">Code</button>
+        <button class="UnderlineNav-item" role="tab" type="button">Issues</button>
+        <button class="UnderlineNav-item" role="tab" type="button">Pull requests</button>
+        <button class="UnderlineNav-item" role="tab" type="button">Actions</button>
+        <button class="UnderlineNav-item" role="tab" type="button">Projects</button>
+        <button class="UnderlineNav-item" role="tab" type="button">Wiki</button>
+        <button class="UnderlineNav-item" role="tab" type="button">Security</button>
+        <button class="UnderlineNav-item" role="tab" type="button">Insights</button>
+        <button class="UnderlineNav-item" role="tab" type="button">Settings</button>
+    </div>
+</nav>
